@@ -10,7 +10,7 @@ const morgan = require('morgan');
 
 const PORT = 3050;
 
-const app = express()
+const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
