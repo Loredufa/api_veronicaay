@@ -3,7 +3,7 @@ const express = require ('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 //const axios = require('axios');
-const {getAlbum} = require('./google_photos')
+const {getAlbum} = require('./google_photos');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
    
