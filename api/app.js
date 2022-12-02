@@ -2,7 +2,7 @@ const express = require ('express');
 
 const bodyParser = require('body-parser');
 const cors = require('cors');
-//const axios = require('axios');
+
 const {getAlbum} = require('./google_photos');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
@@ -15,14 +15,6 @@ app.use(bodyParser.json());
 app.use(cors())
 
 
-// app.use(function(req, res, next) {
-//     const origin = req.headers.origin;
-//     if(origin){
-//          res.setHeader('Access-Control-Allow-Origin', origin);
-//     }
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-//   });
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(cookieParser());
